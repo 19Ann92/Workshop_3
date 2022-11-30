@@ -25,12 +25,12 @@ if (n < m)
 
 else
 {
-    int count = m;
+    int count = n;
 
-    while (count < n)
+    while (count > m)
     {
         Console.Write($"{count * count * count}, ");
-        count++;
+        count--;
     }
-    Console.Write($"{n * n * n}");
+    Console.Write($"{m * m * m}");
 }
